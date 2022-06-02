@@ -1,0 +1,53 @@
+.wrapper {
+    background: #fff;
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+img {
+    width: 100;
+    float: left;
+    margin: 10px;
+}
+
+.service h2, .service p {
+    color: #999;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service {
+    float: left;
+    background: #eee;
+    width: 29%; 
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+} 
+
+.blue {
+    background: blue;
+    float: right;
+}
+
+.red {
+    background: red;
+    float: right;
+}
+
+.green {
+    background: green;
+    float: left;
+}

@@ -1,0 +1,68 @@
+.wrapper {
+    background: #fff;
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* to clear floats */
+.wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* to clear floats */
+.services::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.service h2, .service p {
+    color: #999;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service {
+    float: left;
+    background: #eee;
+    width: 29.3%; 
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+}
+
+.content {
+    padding: 10px;
+    background: #fff;
+    clear: left; /* used to clear floats */
+    margin: 20px 1%;
+}
+
+/* creating columns without using floats */
+.content p {
+    -webkit-column-count: 3;
+    column-count: 3; /* for older browsers */
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    text-align: justify;
+}
+
+section, aside {
+    float: left;
+    width: 46%;  
+    padding: 1%;
+    margin: 1%; 
+    background: #f2f2f2;
+}
+
+.columns::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
